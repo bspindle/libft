@@ -6,7 +6,7 @@
 /*   By: bspindle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/07 11:26:29 by bspindle          #+#    #+#             */
-/*   Updated: 2017/12/14 10:40:18 by bspindle         ###   ########.fr       */
+/*   Updated: 2017/12/19 13:25:18 by bspindle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ char			**ft_strsplit(char const *s, char c);
 char			*ft_strstr(const char *str, const char *to_find);
 char			*ft_strsub(char const *s, unsigned int start, size_t len);
 char			*ft_strtrim(char const *s);
+char			**get_file(const int fd);
 int				ft_atoi(const char *str);
 int				ft_factorial(int n);
 int				ft_isalnum(int c);
@@ -62,6 +63,8 @@ int				ft_strncmp(const char *s1, const char *s2, size_t n);
 int				ft_strnequ(char const *s1, char const *s2, size_t n);
 int				ft_tolower(int c);
 int				ft_toupper(int c);
+int				get_next_line(const int fd, char **line);
+int				get_next_wyw(const int fd, char **line, char c);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
 size_t			ft_strlen(char const *str);
 t_list			*ft_lstcpy(t_list *lst);

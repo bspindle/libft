@@ -6,7 +6,7 @@
 #    By: bspindle <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/07 11:32:49 by bspindle          #+#    #+#              #
-#    Updated: 2017/12/14 10:42:01 by bspindle         ###   ########.fr        #
+#    Updated: 2017/12/19 13:21:37 by bspindle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -95,9 +95,12 @@ SRC_NAME = ft_putchar.c 	\
 	   ft_lstdelfirst.c	\
 	   ft_strnjoin.c	\
 	   ft_strnchr.c		\
-	   ft_del_chartab.c
+	   ft_del_chartab.c	\
+	   get_next_line.c	\
+	   get_next_wyw.c	\
+	   get_file.c
 
-HEADER = libft.h
+INCLUDE = libft.h get_next_line.h
 
 OBJ_NAME = $(SRC_NAME:.c=.o)
 
